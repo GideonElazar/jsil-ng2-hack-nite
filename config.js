@@ -1,5 +1,5 @@
 System.config({
-  "baseURL": "/",
+  "baseURL": "/ng-hackathon-starter",
   "defaultJSExtensions": true,
   "transpiler": "typescript",
   "typescriptOptions": {

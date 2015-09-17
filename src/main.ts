@@ -8,10 +8,12 @@ import {bind, Injectable} from "angular2/di";
 
 import Home from "./home";
 import RepoList from "./repo-list";
+import ImageLoaderApp from "./ImageLoader/image-loader-app";
 
 @RouteConfig([
     {path: '/', as: "home", component:Home},
     {path: '/repo-list', as: "repo-list", component:RepoList},
+    {path: '/imageLoader/image-loader', as: "image-loader", component:ImageLoaderApp},
 ])
 @Component({
     selector: "app"
@@ -22,6 +24,7 @@ import RepoList from "./repo-list";
         <nav>
             <a [router-link]="['/home']">Home</a>
             <a [router-link]="['/repo-list']">Repo List</a>
+            <a [router-link]="['/image-loader']">Image Loader</a>
         </nav>
         <main>
             <router-outlet></router-outlet>

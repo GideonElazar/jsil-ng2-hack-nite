@@ -4,7 +4,7 @@ import {Component, View, bootstrap} from "angular2/angular2";
 import {FORM_DIRECTIVES} from 'angular2/forms'
 
 @Component({
-    selector: "home"
+        selector: "home"
 })
 @View({
     directives: [FORM_DIRECTIVES],
